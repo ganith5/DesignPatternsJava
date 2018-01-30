@@ -1,22 +1,22 @@
 package com.patterns.command;
 
+/**
+ * Implementation of the command interface.
+ * The class holds reference to the "command receiver" or the class that
+ * actually performs the job
+ * @author Pavithra Sachidananda
+ *
+ */
+
 public class Check implements Command{
 	
 	private Cook cook;
 	
-	private int tableNumber;
 	
 	public Check(final Cook cook) {
 		this.cook = cook;
 	}
 	
-	public void setTableNumber(int number) {
-		this.tableNumber = number;
-	}
-	
-	public int getTableNumber() {
-		return tableNumber;
-	}
 	
 	@Override
 	public void execute() {

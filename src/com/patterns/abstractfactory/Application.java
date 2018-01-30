@@ -9,13 +9,13 @@ public class Application {
 
     static GUIFactory guiFactory;
 
-    Application(GUIFactory guiFactory) {
-        this.guiFactory = guiFactory;
-    }
+//    Application(GUIFactory guiFactory) {
+//        this. guiFactory = guiFactory;
+//    }
 
     public static void main(String[] args) {
 
-
+    	//Application application = new Application();
         OSType osType = OSType.iOS;
 
         switch(osType) {
@@ -26,6 +26,8 @@ public class Application {
             case iOS:
                 guiFactory = new iOSGUIFactory();
                 break;
+                
+                
 
         }
 
